@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Engenharia Civil & Gestão de Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #F8FAFC; color: #0F172A; }
+        .bottom-bar { transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .bottom-bar.visible { transform: translateY(0); }
+    </style>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { 500: '#F59E0B', 600: '#D97706' } } } } }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-widest text-white flex items-center gap-2 uppercase">
+                <i class="ph-fill ph-buildings text-brand-500 text-2xl"></i> JM Engenharia
+            </div>
+            <a href="https://wa.me/5516981166022" class="text-xs font-semibold tracking-widest uppercase text-slate-300 hover:text-brand-500 transition-colors">Orçamento</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 min-h-[85dvh]">
+        <div class="flex-1 text-center lg:text-left z-10">
+            <div class="inline-block bg-slate-200 text-slate-700 px-3 py-1 rounded-sm text-xs font-bold tracking-widest uppercase mb-6">
+                Gestão & Execução
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-slate-900 uppercase tracking-tight">
+                Construindo <span class="text-brand-500">soluções</span> sólidas.
+            </h1>
+            <p class="text-slate-600 text-lg mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                Projetos arquitetônicos, estruturais e gestão completa de obras no Centro de São Carlos. Do papel à entrega das chaves.
+            </p>
+            <a href="https://wa.me/5516981166022" class="bg-brand-500 text-slate-900 px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-600 transition-colors shadow-lg">
+                Fale com um Engenheiro
+            </a>
+        </div>
+        <div class="flex-1 w-full relative">
+            <div class="absolute inset-0 bg-brand-500 translate-x-4 translate-y-4 -z-10"></div>
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Engenharia Civil" class="w-full h-[500px] object-cover grayscale opacity-90 shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-24 bg-slate-900 text-white border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold uppercase tracking-tight mb-16 text-center">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-8 border border-slate-800 bg-slate-950 hover:border-brand-500 transition-colors group">
+                    <i class="ph ph-compass-tool text-4xl text-brand-500 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold uppercase mb-3">Projetos</h3>
+                    <p class="text-slate-400 text-sm font-medium leading-relaxed">Elaboração de projetos arquitetônicos, estruturais, elétricos e hidrossanitários.</p>
+                </div>
+                <div class="p-8 border border-slate-800 bg-slate-950 hover:border-brand-500 transition-colors group">
+                    <i class="ph ph-hard-hat text-4xl text-brand-500 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold uppercase mb-3">Gestão de Obras</h3>
+                    <p class="text-slate-400 text-sm font-medium leading-relaxed">Administração completa, cronograma físico-financeiro e controle de qualidade.</p>
+                </div>
+                <div class="p-8 border border-slate-800 bg-slate-950 hover:border-brand-500 transition-colors group">
+                    <i class="ph ph-file-magnifying-glass text-4xl text-brand-500 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold uppercase mb-3">Consultoria</h3>
+                    <p class="text-slate-400 text-sm font-medium leading-relaxed">Laudos técnicos, vistorias cautelares e aprovação de projetos em órgãos públicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1 h-[450px] border-4 border-slate-900 p-2 relative">
+            <iframe src="https://maps.google.com/maps?q=Av.%20Comendador%20Alfredo%20Maffei,%201387%20-%20Centro,%20S%C3%A3o%20Carlos&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale invert"></iframe>
+        </div>
+        <div class="order-1 lg:order-2 lg:pl-12">
+            <h2 class="text-4xl font-extrabold uppercase mb-8">Escritório Central</h2>
+            <div class="space-y-6">
+                <div class="flex gap-4 p-6 bg-white shadow-sm border border-slate-200">
+                    <i class="ph-fill ph-map-pin text-brand-500 text-3xl"></i>
+                    <div>
+                        <p class="font-bold uppercase text-sm mb-1 text-slate-400 tracking-widest">Endereço</p>
+                        <p class="font-semibold">Av. Comendador Alfredo Maffei, 1387<br>Centro, São Carlos - SP<br>13561-270</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-6 bg-white shadow-sm border border-slate-200">
+                    <i class="ph-fill ph-whatsapp-logo text-brand-500 text-3xl"></i>
+                    <div>
+                        <p class="font-bold uppercase text-sm mb-1 text-slate-400 tracking-widest">Contato Profissional</p>
+                        <p class="font-semibold text-lg">(16) 98116-6022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-center text-xs text-slate-500 font-bold uppercase tracking-widest">
+        Prévia conceitual produzida por Antigravity.
+    </footer>
+
+    <!-- Fixed Bottom Bar -->
+    <div id="contactBar" class="bottom-bar fixed bottom-0 left-0 w-full pt-16 pb-8 px-6 bg-gradient-to-t from-slate-900 via-slate-900/95 to-transparent z-40 flex justify-center pointer-events-none">
+        <div class="pointer-events-auto bg-brand-500 text-slate-900 px-8 py-4 font-bold tracking-widest text-xs uppercase shadow-2xl flex items-center gap-3">
+            Solicite um orçamento: <a href="https://wa.me/5516981166022" class="underline text-lg">(16) 98116-6022</a>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const bar = document.getElementById('contactBar');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 200) {
+                bar.classList.add('visible');
+            } else {
+                bar.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
